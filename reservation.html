@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Réservation</title>
+    <link rel="stylesheet" href="style_gestion_des_salles.css">
+</head>
+<body>
+    <header>
+        <h1>Réservation de Salles</h1>
+        <nav>
+            <a href="acceuil.html">Accueil</a>
+            <a href="nos_salles.html">Nos salles</a>
+            <a href="reservation.html" class="active">Réservations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <form action="submit_reservation.php" method="POST">
+        <label for="name">Nom complet :</label>
+        <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+        <label for="email">Adresse email :</label>
+        <input type="text" id="email" name="email" placeholder="Entrez votre email" required>
+
+        <label for="date">Date de réservation :</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Heure de réservation :</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="room">Bloc :</label>
+        <select id="room" name="room" required>
+            <option value="">Sélectionnez un bloc</option>
+            <option value="H">Bloc H</option>
+            <option value="F">Bloc F</option>
+            <option value="K">Bloc K</option>
+        </select>
+ 	<label for="room">Salle à réserver :</label>
+        <select id="room" name="room" required>
+            <option value="">Sélectionnez une salle</option>
+            <option value="Salle 1">Salle 1</option>
+            <option value="Salle 2">Salle 2</option>
+            <option value="Salle 3">Salle 3</option>
+            <option value="Salle 4">Salle 4</option>
+            <option value="Salle 5">Salle 5</option>
+            <option value="Salle 6">Salle 6</option>
+            <option value="Salle 7">Salle 7</option>
+            <option value="Salle 8">Salle 8</option>
+            <option value="Salle 9">Salle 9</option>
+            <option value="Salle 10">Salle 10</option>
+            <option value="Salle 11">Salle 11</option>
+            <option value="Salle 12">Salle 12</option>
+            <option value="Salle 13">Salle 13</option>
+            <option value="Salle 14">Salle 14</option>
+            <option value="Salle 15">Salle 15</option>
+            <option value="Salle 16">Salle 16</option>
+            <option value="Salle 17">Salle 17</option>
+            <option value="Salle 18">Salle 18</option>
+            <option value="Salle 19">Salle 19</option>
+            <option value="Salle 20">Salle 20</option>
+        </select>
+
+        <button type="submit" class="primary-btn">Réserver</button>
+    </form>
+
+    <footer>
+        <p>Réalisé par Souha AIT AHMED, Fidae CHEGARI et Fatimazahra OUKHAINA.</p>
+    </footer>
+</body>
+</html>
